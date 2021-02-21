@@ -62,7 +62,7 @@ app.listen(port, function(error){
 
             fs.writeFileSync(`./resultData/${currentDate}/${tableName+'_'+currentTime}.csv`, data, 'utf8');
             console.log('Complete getting data, press ctrl + C to turn off program'); 
-          }, param [0] === 'h' ? param[2]*60*60*1000 : param [0] === 'm' ? param[2]*60*1000 : param[2]*1000);
+          }, param [0] === 'h' ? param[2]*60*60*1000 + 1000: param [0] === 'm' ? param[2]*60*1000 + 1000: param[2]*1000 + 100);
         }
         else console.log('The first number must be less than or equal the second number \nPress ctrl + C to turn off program');
       } 

@@ -100,7 +100,7 @@ async function crawler(returnData) {
     let dataDate = dataDate_Time[0], dataTime = dataDate_Time[1]+' '+dataDate_Time[2];
   
     locationData.forEach((location, index) => {
-      let buy_sell = proportionData[index].split('/');
+      let buy_sell = proportionData[index].replace(' / ','/').split('/');
       let buy = buy_sell[0], sell = buy_sell[1];
       dataCSV += `${dataDate},${dataTime},${location},${buy},${sell}\n`;
     });

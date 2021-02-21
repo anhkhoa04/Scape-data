@@ -1,6 +1,6 @@
 ## How to run
 * Download or clone this project.
-* Open terminal in the folder that you place this project.
+* Open terminal in the folder that you place this project (the folder contains these files: index.js, package.json,...).
 * Write **npm i** to the termial, press **Enter** and wait for the process complete.
 * If the folder **node_modules** appears in your folder, it means the process complete. If not, run the command above again.
 * Write ***command line*** with the following syntax:  **node index | typeTime | intervalToGetData | intervalToStopProgram**. 
